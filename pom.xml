@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+	<!-- parent pom -->
+    <groupId>com.mkyong.multi</groupId>
+    <artifactId>java-multi-modules</artifactId>
+    <packaging>pom</packaging>
+	<version>1.0.10.11.12</version>
+    <distributionManagement>
+            <repository>
+              <id>github</id>
+              <name>inception</name>
+              <url>https://maven.pkg.github.com/ruchabhange/Inception-argo-demo</url>
+            </repository>
+    </distributionManagement>
+    <profiles>
+        <profile>
+            <id>github</id>
+        </profile>
+    </profiles>
+	<!-- sub modules -->
+	<modules>
+        <module>java-sample-application/source-code/productcatalogue</module>
+    </modules>
+    <properties>
+        <sonar.organization>ruchabhange</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
+    <dependencies>
+         <dependency>
+               <groupId>junit</groupId>
+               <artifactId>junit</artifactId>
+               <version>4.13.1</version>
+               <scope>test</scope>
+         </dependency>
+    </dependencies>
+	
+</project>

@@ -1,0 +1,6 @@
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/services/ProductService.java
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/ProductServiceApplication.java
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/resources/ProductResource.java
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/model/Product.java
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/configuration/ProductServiceConfiguration.java
+/home/runner/work/Inception-argo-demo/Inception-argo-demo/java-sample-application/source-code/productcatalogue/src/main/java/uk/co/danielbryant/djshopping/productcatalogue/healthchecks/BasicHealthCheck.java

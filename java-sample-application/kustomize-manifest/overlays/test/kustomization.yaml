@@ -1,0 +1,46 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../../base
+
+commonLabels:
+  purpose: Inception-demo
+  env : test
+
+replicas:
+ - name: productcatalogue
+   count: 2 
+ - name: shopfront
+   count: 2
+
+patches:
+  - target:
+      kind: Service
+      name: productcatalogue
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/port
+        value: 8021
+  - target:
+      kind: Service
+      name: shopfront        
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/port
+        value: 8020
+  - target:
+      kind: Deployment
+      name: productcatalogue
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: 'ruchabhange/productcatalouge-image:878702eb2e80bc9b62090badabd00130f219bfb1'
+  - target:
+      kind: Deployment
+      name: shopfront
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: 'ruchabhange/shopfront-image:878702eb2e80bc9b62090badabd00130f219bfb1'
+
